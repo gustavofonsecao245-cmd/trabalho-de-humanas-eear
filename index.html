@@ -3,216 +3,188 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ingresso EEAR - Guia Completo</title>
+    <title>Portal de Ingresso EEAR 2026</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --fab-blue: #1a365d;
-            --fab-accent: #3182ce;
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
+        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
+        .specialty-btn {
+            background: white; border: 1px solid #e2e8f0; padding: 12px; border-radius: 12px;
+            font-size: 0.75rem; font-weight: 700; text-align: center; transition: all 0.2s;
+            cursor: pointer; color: #475569;
         }
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #f8fafc;
-            color: #1e293b;
-        }
-        h1, h2, h3 {
-            font-family: 'Montserrat', sans-serif;
-        }
-        .hero-gradient {
-            background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
-        }
-        .card-hover:hover {
-            transform: translateY(-5px);
-            transition: all 0.3s ease;
-            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
-        }
-        .specialty-tag {
-            background: #e2e8f0;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            display: inline-block;
-            margin: 4px;
-        }
+        .specialty-btn:hover { background: #10b981; color: white; transform: translateY(-2px); }
+        .hidden { display: none; }
     </style>
 </head>
 <body>
 
-    <!-- Header / Hero -->
-    <header class="hero-gradient text-white py-16 px-6 text-center shadow-xl">
-        <div class="max-w-4xl mx-auto">
-            <span class="uppercase tracking-widest text-blue-400 font-semibold text-sm">Escola de Especialistas de Aeronáutica</span>
-            <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6">Como Ingressar na EEAR</h1>
-            <p class="text-lg md:text-xl text-blue-100 font-light max-w-2xl mx-auto">
-                Guia atualizado com base nos editais de 2026/2027 para o Curso de Formação e Estágio de Adaptação.
-            </p>
-        </div>
-    </header>
+    <div id="home-page">
+        <header class="hero-gradient text-white py-16 px-6 text-center shadow-xl">
+            <div class="max-w-4xl mx-auto">
+                <span class="uppercase tracking-widest text-blue-400 font-semibold text-sm">Escola de Especialistas de Aeronáutica</span>
+                <h1 class="text-4xl md:text-6xl font-extrabold mt-4 mb-6">Como Ingressar na EEAR</h1>
+                <p class="text-lg md:text-xl text-blue-100 font-light max-w-2xl mx-auto">Guia completo para CFS e EAGS - Edição 2026/2027</p>
+            </div>
+        </header>
 
-    <main class="max-w-6xl mx-auto px-6 py-12">
-        
-        <!-- Requisitos Gerais -->
-        <section class="mb-16 grid md:grid-cols-3 gap-8 text-center">
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-                <div class="text-blue-600 text-3xl mb-4">📅</div>
-                <h3 class="font-bold mb-2">Idade</h3>
-                <p class="text-sm text-slate-600">Mínimo 17 e não completar 25 anos até 31 de dezembro do ano da matrícula.</p>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-                <div class="text-blue-600 text-3xl mb-4">🇧🇷</div>
-                <h3 class="font-bold mb-2">Nacionalidade</h3>
-                <p class="text-sm text-slate-600">Ser brasileiro(a) nato(a) ou naturalizado(a) (verificar restrições para Oficialato futuro).</p>
-            </div>
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
-                <div class="text-blue-600 text-3xl mb-4">📝</div>
-                <h3 class="font-bold mb-2">Inscrição</h3>
-                <p class="text-sm text-slate-600">Valor aproximado: R$ 100,00 via site oficial Ingresso EEAR.</p>
-            </div>
-        </section>
+        <main class="max-w-6xl mx-auto px-6 py-12">
+            <div class="grid lg:grid-cols-2 gap-12">
+                <article class="bg-white rounded-3xl p-8 shadow-md border-t-4 border-blue-600">
+                    <h2 class="text-3xl font-bold text-slate-800 mb-4">CFS</h2>
+                    <p class="text-slate-500 mb-6 italic">Ensino Médio Completo | 2 anos de formação</p>
+                    <a href="https://ingresso.eear.fab.mil.br/" target="_blank" class="block w-full text-center bg-blue-600 hover:bg-blue-700 text-white font-bold py-4 rounded-xl transition">
+                        ACESSAR EDITAL CFS (SITE OFICIAL)
+                    </a>
+                </article>
 
-        <!-- Divisão CFS vs EAGS -->
-        <div class="grid lg:grid-cols-2 gap-12">
+                <article class="bg-white rounded-3xl p-8 shadow-md border-t-4 border-emerald-500">
+                    <h2 class="text-3xl font-bold text-slate-800 mb-2">EAGS</h2>
+                    <p class="text-slate-500 mb-6 italic text-sm">Nível Técnico | 1 ano de formação</p>
+                    
+                    <div class="bg-slate-50 p-4 rounded-xl">
+                        <h4 class="font-bold text-xs mb-4 text-slate-500 uppercase text-center">Selecione sua especialidade:</h4>
+                        <div class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                            <button onclick="showDetails('SAD')" class="specialty-btn">SAD (Adm)</button>
+                            <button onclick="showDetails('SIN')" class="specialty-btn">SIN (Inf)</button>
+                            <button onclick="showDetails('SEF')" class="specialty-btn">SEF (Enf)</button>
+                            <button onclick="showDetails('BET')" class="specialty-btn">BET (Eletr)</button>
+                            <button onclick="showDetails('SEL')" class="specialty-btn">SEL (Elét)</button>
+                            <button onclick="showDetails('SOB')" class="specialty-btn">SOB (Obras)</button>
+                            <button onclick="showDetails('SLB')" class="specialty-btn">SLB (Lab)</button>
+                            <button onclick="showDetails('SRD')" class="specialty-btn">SRD (Rad)</button>
+                            <button onclick="showDetails('SMU')" class="specialty-btn">SMU (Mús)</button>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+    </div>
+
+    <div id="details-page" class="hidden">
+        <nav class="bg-white border-b p-4">
+            <div class="max-w-4xl mx-auto">
+                <button onclick="showHome()" class="text-blue-600 font-bold flex items-center hover:underline">
+                    ← Voltar ao Início
+                </button>
+            </div>
+        </nav>
+
+        <main class="max-w-4xl mx-auto px-6 py-12">
+            <header class="mb-10">
+                <span id="det-tag" class="bg-emerald-100 text-emerald-700 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest">EAGS</span>
+                <h1 id="det-titulo" class="text-4xl font-extrabold text-slate-900 mt-4">Nome do Curso</h1>
+                <p id="det-desc" class="text-lg text-slate-500 mt-2">Descrição da área de atuação.</p>
+            </header>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <section class="space-y-6">
+                    <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                        <h3 class="font-bold text-slate-800 mb-4">📊 Dados do Último Exame</h3>
+                        <div class="space-y-3 text-sm">
+                            <div class="flex justify-between border-b pb-2"><span>Vagas:</span><span id="det-vagas" class="font-bold">0</span></div>
+                            <div class="flex justify-between border-b pb-2"><span>Nota de Corte:</span><span id="det-corte" class="font-bold text-emerald-600">0.0</span></div>
+                        </div>
+                    </div>
+                    <div class="bg-blue-600 p-6 rounded-2xl text-white">
+                        <h3 class="font-bold mb-2">Edital Específico</h3>
+                        <p class="text-xs mb-4 opacity-80">Confira o conteúdo programático oficial para esta especialidade.</p>
+                        <a href="https://ingresso.eear.fab.mil.br/" target="_blank" class="bg-white text-blue-600 px-4 py-2 rounded-lg font-bold block text-center text-sm">Ver Edital Completo</a>
+                    </div>
+                </section>
+
+                <section class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+                    <h3 class="font-bold text-slate-800 mb-4 italic">📚 O que cai na prova?</h3>
+                    <ul id="det-materias" class="space-y-3 text-sm text-slate-600">
+                        </ul>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const data = {
+            'SAD': {
+                titulo: 'SAD - Administração',
+                vagas: '45 vagas',
+                corte: '8.100',
+                materias: ['Português (Gramática/Interpretação)', 'Redação Oficial', 'Teoria Geral da Administração', 'Direito Administrativo', 'Gestão de Pessoas']
+            },
+            'SIN': {
+                titulo: 'SIN - Informática',
+                vagas: '30 vagas',
+                corte: '7.850',
+                materias: ['Hardware e Periféricos', 'Redes de Computadores', 'Lógica de Programação', 'Banco de Dados (SQL)', 'Segurança da Informação']
+            },
+            'SEF': {
+                titulo: 'SEF - Enfermagem',
+                vagas: '20 vagas',
+                corte: '8.400',
+                materias: ['Anatomia e Fisiologia', 'Ética Profissional', 'Técnicas de Enfermagem', 'Emergência e Urgência', 'Saúde Pública']
+            },
+            'BET': {
+                titulo: 'BET - Eletrônica',
+                vagas: '12 vagas',
+                corte: '7.500',
+                materias: ['Circuitos Elétricos', 'Eletrônica Digital', 'Sistemas de Telecomunicações', 'Instrumentação Eletrônica']
+            },
+            'SEL': {
+                titulo: 'SEL - Eletricidade',
+                vagas: '10 vagas',
+                corte: '7.350',
+                materias: ['Eletromagnetismo', 'Instalações Elétricas Industriais', 'Máquinas Elétricas', 'NR-10 e Segurança']
+            },
+            'SOB': {
+                titulo: 'SOB - Obras',
+                vagas: '08 vagas',
+                corte: '7.200',
+                materias: ['Desenho Técnico', 'Materiais de Construção', 'Topografia', 'Mecânica dos Solos', 'Orçamentação']
+            },
+            'SLB': {
+                titulo: 'SLB - Laboratório',
+                vagas: '05 vagas',
+                corte: '8.000',
+                materias: ['Bioquímica Clínica', 'Hematologia', 'Parasitologia', 'Microbiologia', 'Biossegurança']
+            },
+            'SRD': {
+                titulo: 'SRD - Radiologia',
+                vagas: '05 vagas',
+                corte: '7.900',
+                materias: ['Física das Radiações', 'Técnicas Radiológicas', 'Proteção Radiológica', 'Anatomia Radiográfica']
+            },
+            'SMU': {
+                titulo: 'SMU - Música',
+                vagas: '15 vagas (Varia por instrumento)',
+                corte: '7.000',
+                materias: ['Teoria Musical', 'Solfejo', 'História da Música', 'Execução Prática do Instrumento']
+            }
+        };
+
+        function showDetails(key) {
+            const info = data[key];
+            document.getElementById('det-titulo').innerText = info.titulo;
+            document.getElementById('det-vagas').innerText = info.vagas;
+            document.getElementById('det-corte').innerText = info.corte;
             
-            <!-- Bloco CFS -->
-            <article class="bg-white rounded-3xl p-8 shadow-md border-t-4 border-blue-600 card-hover">
-                <div class="flex items-center mb-6">
-                    <div class="bg-blue-100 p-3 rounded-lg mr-4">
-                        <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                    </div>
-                    <h2 class="text-3xl font-bold text-slate-800">CFS</h2>
-                </div>
-                <p class="text-slate-500 font-semibold mb-4 uppercase text-xs tracking-wider">Curso de Formação de Sargentos</p>
-                <ul class="space-y-4 text-slate-600 mb-8">
-                    <li class="flex items-start">
-                        <span class="text-blue-500 mr-2">✓</span>
-                        <span><strong>Escolaridade:</strong> Apenas Ensino Médio completo.</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-blue-500 mr-2">✓</span>
-                        <span><strong>Duração:</strong> 2 anos em regime de internato (Guaratinguetá-SP).</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-blue-500 mr-2">✓</span>
-                        <span><strong>Provas:</strong> Português, Inglês, Matemática e Física.</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-blue-500 mr-2">✓</span>
-                        <span><strong>Vagas (Último Edital):</strong> ~175 vagas (Turma 1/2027).</span>
-                    </li>
-                </ul>
-                <div class="bg-slate-50 p-6 rounded-xl">
-                    <h4 class="font-bold text-sm mb-3 text-slate-700">Principais Áreas:</h4>
-                    <div class="flex flex-wrap">
-                        <span class="specialty-tag">BCT (Tráfego Aéreo)</span>
-                        <span class="specialty-tag">SGS (Guarda e Segurança)</span>
-                        <span class="specialty-tag">BEI (Eletricidade)</span>
-                        <span class="specialty-tag">BMA (Mecânica)</span>
-                    </div>
-                </div>
-            </article>
+            const lista = document.getElementById('det-materias');
+            lista.innerHTML = '';
+            info.materias.forEach(m => {
+                const li = document.createElement('li');
+                li.innerHTML = `<span class="text-emerald-500 font-bold mr-2">•</span> ${m}`;
+                lista.appendChild(li);
+            });
 
-            <!-- Bloco EAGS -->
-            <article class="bg-white rounded-3xl p-8 shadow-md border-t-4 border-emerald-500 card-hover">
-                <div class="flex items-center mb-6">
-                    <div class="bg-emerald-100 p-3 rounded-lg mr-4">
-                        <svg class="w-8 h-8 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path></svg>
-                    </div>
-                    <h2 class="text-3xl font-bold text-slate-800">EAGS</h2>
-                </div>
-                <p class="text-slate-500 font-semibold mb-4 uppercase text-xs tracking-wider">Estágio de Adaptação à Graduação de Sargento</p>
-                <ul class="space-y-4 text-slate-600 mb-8">
-                    <li class="flex items-start">
-                        <span class="text-emerald-500 mr-2">✓</span>
-                        <span><strong>Escolaridade:</strong> Médio + Curso Técnico na área.</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-emerald-500 mr-2">✓</span>
-                        <span><strong>Duração:</strong> Aproximadamente 1 ano.</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-emerald-500 mr-2">✓</span>
-                        <span><strong>Provas:</strong> Português e Conhecimentos Específicos da área.</span>
-                    </li>
-                    <li class="flex items-start">
-                        <span class="text-emerald-500 mr-2">✓</span>
-                        <span><strong>Vagas (Último Edital):</strong> ~188 vagas (Turma 2027).</span>
-                    </li>
-                </ul>
-                <div class="bg-slate-50 p-6 rounded-xl">
-                    <h4 class="font-bold text-sm mb-3 text-slate-700">Cursos Permitidos (Especialidades):</h4>
-                    <div class="grid grid-cols-2 gap-2 text-xs font-semibold text-slate-600">
-                        <div class="bg-white p-2 border rounded">SAD - Administração</div>
-                        <div class="bg-white p-2 border rounded">SIN - Informática</div>
-                        <div class="bg-white p-2 border rounded">SEF - Enfermagem</div>
-                        <div class="bg-white p-2 border rounded">BET - Eletrônica</div>
-                        <div class="bg-white p-2 border rounded">SEL - Eletricidade</div>
-                        <div class="bg-white p-2 border rounded">SOB - Obras</div>
-                        <div class="bg-white p-2 border rounded">SLB - Laboratório</div>
-                        <div class="bg-white p-2 border rounded">SRD - Radiologia</div>
-                        <div class="bg-white p-2 border rounded">SMU - Música</div>
-                    </div>
-                </div>
-            </article>
+            document.getElementById('home-page').classList.add('hidden');
+            document.getElementById('details-page').classList.remove('hidden');
+            window.scrollTo(0, 0);
+        }
 
-        </div>
-
-        <!-- Etapas do Concurso -->
-        <section class="mt-20">
-            <h2 class="text-3xl font-bold text-center mb-12">Etapas do Processo Seletivo</h2>
-            <div class="relative">
-                <div class="hidden md:block absolute left-1/2 h-full border-l-2 border-dashed border-slate-300 transform -translate-x-1/2"></div>
-                
-                <div class="space-y-12">
-                    <!-- Etapa 1 -->
-                    <div class="flex flex-col md:flex-row items-center">
-                        <div class="md:w-1/2 md:pr-12 text-center md:text-right">
-                            <h4 class="font-bold text-xl text-blue-800">1. Provas Escritas</h4>
-                            <p class="text-slate-500">Exame intelectual de caráter eliminatório e classificatório.</p>
-                        </div>
-                        <div class="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 my-4 md:my-0">1</div>
-                        <div class="md:w-1/2 md:pl-12"></div>
-                    </div>
-
-                    <!-- Etapa 2 -->
-                    <div class="flex flex-col md:flex-row items-center">
-                        <div class="md:w-1/2 md:pr-12"></div>
-                        <div class="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 my-4 md:my-0">2</div>
-                        <div class="md:w-1/2 md:pl-12 text-center md:text-left">
-                            <h4 class="font-bold text-xl text-blue-800">2. Inspeção de Saúde (INSPSAU)</h4>
-                            <p class="text-slate-500">Avaliação médica completa para aptidão militar.</p>
-                        </div>
-                    </div>
-
-                    <!-- Etapa 3 -->
-                    <div class="flex flex-col md:flex-row items-center">
-                        <div class="md:w-1/2 md:pr-12 text-center md:text-right">
-                            <h4 class="font-bold text-xl text-blue-800">3. Exame Psicológico (EAP)</h4>
-                            <p class="text-slate-500">Verificação de perfil para a carreira de Sargento.</p>
-                        </div>
-                        <div class="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 my-4 md:my-0">3</div>
-                        <div class="md:w-1/2 md:pl-12"></div>
-                    </div>
-
-                    <!-- Etapa 4 -->
-                    <div class="flex flex-col md:flex-row items-center">
-                        <div class="md:w-1/2 md:pr-12"></div>
-                        <div class="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center z-10 my-4 md:my-0">4</div>
-                        <div class="md:w-1/2 md:pl-12 text-center md:text-left">
-                            <h4 class="font-bold text-xl text-blue-800">4. Teste Físico (TACF)</h4>
-                            <p class="text-slate-500">Corrida, flexão de braços, abdominais e salto.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="bg-slate-900 text-white py-12 mt-20 px-6 text-center">
-        <p class="opacity-70 text-sm">© 2026 Guia Independente de Ingresso EEAR. Consulte sempre o <a href="https://ingresso.eear.fab.mil.br/" target="_blank" class="underline hover:text-blue-400">site oficial da Aeronáutica</a>.</p>
-    </footer>
-
+        function showHome() {
+            document.getElementById('details-page').classList.add('hidden');
+            document.getElementById('home-page').classList.remove('hidden');
+        }
+    </script>
 </body>
 </html>
