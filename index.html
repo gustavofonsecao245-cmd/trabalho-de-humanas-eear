@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; transition: background-color 0.3s, color 0.3s; }
         h1, h2, h3 { font-family: 'Montserrat', sans-serif; }
         .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); }
         .specialty-btn {
@@ -17,9 +17,33 @@
         }
         .specialty-btn:hover { background: #10b981; color: white; transform: translateY(-2px); }
         .hidden { display: none; }
+
+        /* Estilos do Modo Noturno */
+        body.dark-mode { background-color: #0f172a; color: #f1f5f9; }
+        .dark-mode .bg-white { background-color: #1e293b !important; color: #f1f5f9; }
+        .dark-mode .text-slate-800, .dark-mode .text-slate-900 { color: #f1f5f9 !important; }
+        .dark-mode .text-slate-500, .dark-mode .text-slate-600 { color: #94a3b8 !important; }
+        .dark-mode .specialty-btn { background: #334155; color: #f1f5f9; border-color: #475569; }
+        .dark-mode .bg-slate-50 { background-color: #334155 !important; }
+        .dark-mode nav { background-color: #1e293b !important; border-color: #334155 !important; }
+        .dark-mode .border-slate-200 { border-color: #334155 !important; }
+        
+        /* Botão Flutuante */
+        #theme-toggle {
+            position: fixed; bottom: 24px; right: 24px; z-index: 100;
+            width: 50px; height: 50px; border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+            cursor: pointer; transition: transform 0.2s;
+        }
+        #theme-toggle:hover { transform: scale(1.1); }
     </style>
 </head>
 <body>
+
+    <button id="theme-toggle" onclick="toggleDarkMode()" class="bg-slate-800 text-white">
+        <span id="theme-icon">🌙</span>
+    </button>
 
     <div id="home-page">
         <header class="hero-gradient text-white py-16 px-6 text-center shadow-xl">
@@ -184,6 +208,30 @@
         function showHome() {
             document.getElementById('details-page').classList.add('hidden');
             document.getElementById('home-page').classList.remove('hidden');
+        }
+
+        // FUNÇÃO DO MODO NOTURNO
+        function toggleDarkMode() {
+            const body = document.body;
+            const btn = document.getElementById('theme-toggle');
+            const icon = document.getElementById('theme-icon');
+            
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                icon.innerText = '☀️';
+                btn.classList.replace('bg-slate-800', 'bg-yellow-500');
+                localStorage.setItem('theme', 'dark');
+            } else {
+                icon.innerText = '🌙';
+                btn.classList.replace('bg-yellow-500', 'bg-slate-800');
+                localStorage.setItem('theme', 'light');
+            }
+        }
+
+        // Verifica se o usuário já tinha uma preferência salva
+        if (localStorage.getItem('theme') === 'dark') {
+            toggleDarkMode();
         }
     </script>
 </body>
